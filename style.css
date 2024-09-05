@@ -1,0 +1,1304 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-wrap: pretty;
+    /* border: 1px solid red; */
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    /* background-color: #f0f8ff; */
+    font-family: "Kanit", sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h6,
+p {
+    text-wrap: balance;
+}
+
+input,
+textarea,
+button {
+    font-family: inherit
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+:root {
+    --primaryColor: #161514;
+    --secondaryColor: #2b0060;
+    --lightColor: #ffffff;
+    --regularFont: 1.6rem;
+    --headingFont: 54px;
+    --ffPrimary: "Kanit", sans-serif;
+}
+
+header {
+    width: 100%;
+    height: auto;
+}
+
+main {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+}
+
+.grid-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.grid-6 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.grid-7 {
+    display: grid;
+    grid-template-columns: 2fr 3fr 1fr 1fr;
+}
+
+.grid-10 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.grid-13 {
+    display: grid;
+    grid-template-columns: 3fr 5fr;
+}
+
+.dflex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dflex-start {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.dflex-col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.dflex-col-start {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.dflex-end {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.align {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 0.5rem;
+}
+
+.componentSpacing {
+    padding: 6rem 0;
+}
+
+
+/* ::: HEADER CODE STARTS HERE::: */
+.navlogo img {
+    height: 8rem;
+    width: auto;
+}
+.navContainer{
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    background-color: #ffffff;
+    /* border: 0; */
+    /* box-shadow: 20px 20px rgb(154, 6, 6); */
+}
+
+.navLink {
+    justify-content: space-around;
+    font-size: 1.6rem;
+    color: black;
+    font-weight: 300;
+}
+
+.navLink li {
+    list-style-type: none;
+}
+
+.navLink li a {
+    text-decoration: none;
+    color: #000000;
+
+}
+
+.navIcon img {
+    height: 4rem;
+    width: auto;
+}
+.checkbtn{
+    display: none;
+}
+#check{
+    display: none; 
+}
+
+.heroSectionContainer {
+    padding: 10rem;
+    /* min-height: 300vh;  */
+}
+
+/* ::: HEADER CODE ENDS HERE::: */
+
+/* ::: MAIN CODE ENDS HERE::: */
+
+.jumbotron h1 {
+    font-size: 4rem;
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+}
+
+.jumbotron p {
+    font-size: 2.2rem;
+    font-weight: 300;
+    color: #adb5bd;
+}
+
+.jumbotron button {
+    height: 4.5rem;
+    width: 15%;
+    font-size: 1.6rem;
+    border-radius: 10px;
+    background-color: #0000ff;
+    color: white;
+}
+
+.heroSectionContainer {
+    background-image: url(./assets/images/build.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.slideLogo img {
+    height: 7rem;
+    width: auto;
+}
+
+.serviceText1 h3 {
+    margin-bottom: 2rem;
+    font-size: 2.4rem;
+    font-weight: 300;
+}
+
+.serviceText1 p {
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    color: #adb5bd;
+    font-weight: 300;
+
+}
+
+.sd i {
+    font-size: 3.9rem;
+    margin-bottom: 1.3rem;
+    color: #0000ff;
+}
+
+.sd h4 {
+    font-size: 2.2rem;
+    font-weight: 300;
+    margin-bottom: 1.6rem;
+}
+
+.sd p {
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: #adb5bd;
+
+}
+
+.sd a {
+    font-size: 1.7rem;
+    color: #0000ff;
+    text-decoration: none;
+}
+
+.st i {
+    font-size: 3.9rem;
+    margin-bottom: 1.3rem;
+    color: #0000ff;
+
+}
+
+.st h4 {
+    font-size: 2.2rem;
+    font-weight: 300;
+    margin-bottom: 1.6rem;
+}
+
+.st p {
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: #adb5bd;
+
+}
+
+.st a {
+    font-size: 1.7rem;
+    color: #0000ff;
+    text-decoration: none;
+}
+
+.md i {
+    font-size: 3.9rem;
+    margin-bottom: 1.3rem;
+    color: #0000ff;
+
+}
+
+.md h4 {
+    font-size: 2.2rem;
+    font-weight: 300;
+    margin-bottom: 1.6rem;
+}
+
+.md p {
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: #adb5bd;
+
+}
+
+.md a {
+    font-size: 1.7rem;
+    color: #0000ff;
+    text-decoration: none;
+}
+
+.cs i {
+    font-size: 3.9rem;
+    margin-bottom: 1.3rem;
+    color: #0000ff;
+
+}
+
+.cs h4 {
+    font-size: 2.2rem;
+    font-weight: 300;
+    margin-bottom: 1.6rem;
+}
+
+.cs p {
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: #adb5bd;
+
+}
+
+.cs a {
+    font-size: 1.7rem;
+    color: #0000ff;
+    text-decoration: none;
+
+}
+
+.sd {
+    margin-bottom: 8rem;
+}
+
+.md {
+    margin-bottom: 5.7rem;
+
+}
+
+.slideContainer {
+    border: 1px solid #000000;
+    background-color: #ffffff;
+}
+
+.achievementsContainer {
+    background-color: #f8f9fc10;
+}
+
+
+.technologiesText1 span{
+    color:#2f55d4;
+}
+
+.achievementsText1 i {
+    font-size: 4rem;
+    margin-bottom: 4rem;
+    color: #0000ff;
+
+}
+.serviceText1 span{
+    color: #2f55d4;
+}
+
+.achievementsText1 h4 {
+    font-size: 3.5rem;
+    font-weight: 350;
+}
+
+.achievementsText1 p {
+    font-size: 2rem;
+    font-weight: 190;
+}
+
+.achievementsText2 i {
+    font-size: 4rem;
+    margin-bottom: 4rem;
+    color: #0000ff;
+
+}
+
+.achievementsText2 h4 {
+    font-size: 3.5rem;
+    font-weight: 350;
+}
+
+.achievementsText2 p {
+    font-size: 2rem;
+    font-weight: 190;
+}
+
+.achievementsText3 i {
+    font-size: 4rem;
+    margin-bottom: 4rem;
+    color: #0000ff;
+
+}
+
+.achievementsText3 h4 {
+    font-size: 3.5rem;
+    font-weight: 350;
+}
+
+.achievementsText3 p {
+    font-size: 2rem;
+    font-weight: 190;
+}
+
+.achievementsText4 i {
+    font-size: 4rem;
+    margin-bottom: 4rem;
+    color: #0000ff;
+
+}
+
+.achievementsText4 h4 {
+    font-size: 3.5rem;
+    font-weight: 350;
+}
+
+.achievementsText4 p {
+    font-size: 2rem;
+    font-weight: 190;
+}
+
+.technologiesText1 h2 {
+    font-size: 3.4rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+.technologiesText1 p {
+    font-size: 2rem;
+    font-weight: 200;
+    margin-bottom: 4.2rem;
+}
+
+.technologiesCardBody h4 {
+    font-size: 1.7rem;
+    font-weight: 350;
+    margin-bottom: 0.7rem;
+}
+
+.technologiesCardBody p {
+    font-size: 1rem;
+    font-weight: 240;
+}
+
+.technologiesCardHeader img {
+    height: 5.5rem;
+    width: auto;
+}
+
+
+
+.one button {
+    height: 3rem;
+    width: 50px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+}
+
+.two button {
+    height: 3rem;
+    width: 80px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+}
+
+.three button {
+    height: 3rem;
+    width: 120px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+}
+
+.four button {
+    height: 3rem;
+    width: 50px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+}
+
+.five button {
+    height: 3rem;
+    width: 100px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+}
+
+.six button {
+    height: 3rem;
+    width: 100px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+}
+
+.seven button {
+    height: 3rem;
+    width: 80px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+}
+
+.eight button {
+    height: 3rem;
+    width: 80px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+}
+
+.nine button {
+    height: 3rem;
+    width: 50px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+}
+
+.ten button {
+    height: 3rem;
+    width: 50px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+}
+
+.technologiesCard {
+    border: 1px solid #cdcbcb91;
+    margin: 2rem 2rem;
+    text-align: center;
+    justify-content: center;
+}
+
+.clientsContainer {
+    background-color: #f7f8fb;
+}
+
+.technologiesCard img {
+    margin: 0 0 0 5rem;
+}
+
+.technologiesCardHeader7 img {
+    margin: 2rem 0 0 0;
+}
+.technologiesCardHeader8 img{
+    height: 6.9vh;
+}
+
+
+.technologiesCardHeader7{
+    padding: 0 2rem 0 3rem;
+}
+
+.processText2 {
+    justify-content: space-around;
+}
+
+.processText1 h3 {
+    margin-bottom: 3rem;
+    font-size: 2.6rem;
+    font-weight: 240;
+    color: #ffffff;
+}
+
+.processContainer {
+    background-color: #5a6d90;
+    padding: 3rem;
+}
+
+.listen h5 {
+    color: greenyellow;
+    font-size: 1.9rem;
+    margin-bottom: 1.5rem;
+}
+
+.listen i {
+    color: greenyellow;
+}
+
+.listen p {
+    font-size: 1.6rem;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.discuss h5 {
+    color: greenyellow;
+    font-size: 1.9rem;
+    margin-bottom: 1.5rem;
+}
+
+.discuss i {
+    color: greenyellow;
+
+}
+
+.discuss p {
+    font-size: 1.6rem;
+    color: #ffffff;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+.solutions h5 {
+    color: greenyellow;
+    font-size: 1.9rem;
+    margin-bottom: 1.5rem;
+}
+
+.solutions i {
+    color: greenyellow;
+
+}
+
+.solutions p {
+    font-size: 1.6rem;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.processText2 {
+    margin-bottom: 2rem;
+}
+
+.processContainer {
+    background-image: url(./assets/images/cta.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.processText3 button {
+    background-color: #0000ff;
+    border: 0;
+    height: 4.2rem;
+    padding: 0 2rem 0 2rem;
+    border-radius: 40px;
+}
+
+.processText3 a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.techBlogCard {
+    width: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    border-radius: 5px;
+}
+
+.techBlogCard img {
+    border-radius: 10px;
+}
+
+.techBlogCardBody {
+    /* background-color: #4CAF50; */
+    color: #000000;
+    padding: 5px;
+}
+
+.techBlogCardHeader img {
+    aspect-ratio: 16/9;
+    width: auto;
+}
+
+.headingTitle h4 {
+    font-size: 3rem;
+    font-weight: 320;
+    margin-bottom: 3rem;
+}
+
+.techBlogsBody {
+    gap: 2rem;
+    justify-content: center;
+}
+
+.techBlogCardBody {
+    font-size: 2rem;
+    font-weight: 250;
+}
+
+.techBlogCardBody p {
+    margin-bottom: 1.3rem;
+}
+
+.clientsContainer {
+    padding: 5rem;
+    box-shadow:  rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.clientsText1 h4 {
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    font-weight: 330;
+}
+
+.clientsText2 p {
+    font-size: 1.8rem;
+    font-weight: 290;
+}
+
+/* .clientsText2 {} */
+
+/* ::: MAIN CODE ENDS HERE::: */
+
+/* ::: FOOTER CODE ENDS HERE::: */
+
+.mitrah img {
+    height: 8vh;
+    width: auto;
+    margin-bottom: 3rem;
+    background-color: #ffffff;
+    border-radius: 70%;
+
+}
+.united{
+    gap: 1rem;
+}
+.india{
+    gap: 1rem;
+}
+
+.united h4 {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.uniAddress {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.indiaAddress {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.indiaAddress h4 {
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+.madurai {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.madurai h4 {
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+.coimbatore {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.coimbatore h4 {
+    font-size: 1.8rem;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.addNum {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+.socialMedia {
+    font-size: 1.9rem;
+}
+
+
+.coldFusion {
+    margin-bottom: 3.8rem;
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+
+.coldFusion li {
+    list-style-type: none;
+}
+
+.coldFusion h4 {
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.technologyService {
+    margin-bottom: 4.5rem;
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+
+.technologyService li {
+    list-style-type: none;
+}
+
+.technologyService h4 {
+    margin-bottom: 2rem;
+    font-size: 2.4rem;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.otherService {
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+
+.otherService h4 {
+    margin-bottom: 2rem;
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 2.4rem;
+}
+
+.otherService li {
+    list-style-type: none;
+}
+
+.textInfo {
+    margin-bottom: 2rem;
+}
+
+.textInfo p {
+    font-size: 1.8rem;
+}
+
+.informationBodyText2 li {
+    font-size: 1.8rem;
+}
+
+.informationBody p {
+    font-size: 1.8rem;
+}
+
+.informationBodyText3 h3 {
+    font-size: 2rem;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.textInfo input {
+     height: 4.2rem;
+     /* width: auto;  */
+     padding: 0 20rem 0 0;
+    background-color: #202942;
+    color: #adb5bd;
+    border-radius: 5px;
+}
+.imporMsg textarea  {
+    background-color: #202942;
+}
+
+.textinfo1 span{
+    color: red;
+}
+.textInfo2 span{
+    color: red;
+}
+.textInfo3 span{
+    color: red;
+}
+.textInfo4 span{
+    color: red;
+}
+.numbers span{
+    color: red;
+}
+
+
+.message1 button {
+    height: 4.5rem;
+    width: 100%;
+    background-color: blue;
+    color: #ffffff;
+    font-size: 1.6rem;
+    border-radius: 10px;
+}
+
+.aboutUsText1 {
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+
+.aboutUsText2 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 2rem;
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+
+.aboutUsText2 li {
+    list-style-type: none;
+}
+
+.informationContainer {
+    background-color: #202942;
+    color: #adb5bd;
+    /* border: 1px solid white; */
+}
+
+.separator {
+    width: 0;
+    height: 0;
+    border-left: 100vw solid transparent;
+    border-bottom: 10vw solid #202942;
+}
+
+.aboutUsContainer {
+    background-color: #202942;
+    color: #adb5bd;
+}
+
+.clientpara{
+    margin-bottom: 2.5rem;
+}
+.client7 button{
+    background-color: #000dff;
+    height: 1.4vh;
+    width: 10px;
+    transition: all 0.5s ease;  
+    border: none;
+} 
+.chatBox{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    position: fixed;
+    z-index: 999;
+    bottom: 0;
+    right: 0;
+}
+.chatBox i{
+    font-size: 3.5rem;
+    /* position: fixed; */
+    z-index: 999;
+}
+ 
+
+ /* .messageBox{
+    position: fixed;
+    bottom: -1.0rem;
+    right: 0.5rem;
+    color: red;
+    z-index: 999;
+}  */
+
+/* ::: FOOTER CODE ENDS HERE::: */
+
+/* ::: RESPONSIVE CODE ENDS HERE::: */
+
+@media(width <=576px) {
+
+    .navContainer,
+    .heroSectionContainer,
+    .slideContainer,
+    .servicesContainer,
+    .achievementsContainer,
+    .technologiesContainer,
+    .processContainer,
+    .techBlogsContainer,
+    .clientsContainer,
+    .informationContainer,
+    .aboutUsContainer {
+        /* padding: 8rem  ; */
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        max-width: 576px;
+        /* margin: auto; */
+        padding: 0 1rem;
+    }
+
+
+    .heroSectionBody {
+        grid-template-columns: 1fr;
+    }
+
+    .jumbotron h1 {
+        font-size: 2.5rem;
+    }
+
+    .jumbotron p {
+        font-size: 1.6rem;
+    }
+
+    .jumbotron button {
+        height: 8vh;
+        width: 100px;
+        border-radius: 5px;
+    }
+
+    .jumbotron {
+        padding: 0;
+        margin: 3rem;
+    }
+
+    .jumbotronpicture img {
+        height: 65vh;
+        width: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .servicesBody2 {
+        grid-template-columns: 1fr;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* .sd p{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    } */
+
+    .achievementsBody {
+        margin: 0;
+        padding: 0;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .technologiesBody3 {
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+    .technologiesBody2 button{
+        gap: 2rem;
+    }
+
+    .technologiesText1 h2 {
+        font-size: 2.5rem;
+    }
+
+    .technologiesText1 p {
+        font-size: 1.5rem;
+    }
+
+    .informationBody {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .textInfo input {
+        height: 4rem;
+        width: 100%;
+    }
+
+    .techBlogsBody {
+        margin: 0;
+        padding: 0;
+        grid-template-columns: 1fr;
+    }
+    .techBlogsContainer{
+        padding: 0.5rem 3rem;
+    }
+    .technologiesCard {
+        border: 1px solid #c0c0c0;
+        margin: 1rem 0.5rem;
+        text-align: center;
+        height: 114px;
+        width: 200px;
+        justify-content: center;
+    }
+
+    .technologiesCard img {
+        margin: 0 0 0 7rem;
+    }
+
+    .technologiesCardHeader7 img {
+        margin: 2rem 0 0 0;
+    }
+    .processContainer{
+        padding: 2rem 2rem 0 2rem;
+    }
+
+    .processBody2 {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .processText3 button {
+        margin-bottom: 2rem;
+    }
+
+    .grid-10 {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .informationBodyText2 li {
+        width: 100%;
+    }
+
+    .techBlogCard img {
+        /* padding: ; */
+        /* box-shadow: 30px 30px 30px red; */
+        text-align: center;
+        border-radius: 5px;
+    }
+    
+
+}
+
+@media(width>=576.2px) and (width<=768px) {
+
+    .navContainer,
+    .heroSectionContainer,
+    .slideContainer,
+    .servicesContainer,
+    .achievementsContainer,
+    .technologiesContainer,
+    .processContainer,
+    .techBlogsContainer,
+    .clientsContainer,
+    .informationContainer,
+    .aboutUsContainer {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        max-width: 768px;
+        /* margin: auto; */
+        padding: 0 1rem;
+    }
+
+    .heroSectionBody {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .jumbotron h1 {
+        font-size: 2.8rem;
+    }
+
+    .jumbotron p {
+        font-size: 1.7rem;
+    }
+
+    .jumbotron button {
+        height: 8vh;
+        width: 100px;
+        border-radius: 5px;
+    }
+
+    .jumbotron {
+        padding: 0;
+        margin: 3rem;
+    }
+
+    .jumbotronpicture img {
+        height: 65vh;
+        width: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .servicesBody2 {
+        grid-template-columns: 1fr 1fr;
+        margin: 0;
+        padding: 0;
+    }
+
+    .sd p {
+        font-size: 1.5rem;
+    }
+    .st p{
+        font-size: 1.5rem;
+    }
+    .md p{
+        font-size: 1.5rem;
+
+    }
+    .cs p{
+        font-size: 1.5rem;
+
+    }
+    
+
+    /* .sd p{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    } */
+
+    .achievementsBody {
+        margin: 0;
+        padding: 0;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .technologiesBody3 {
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+    }
+
+    .technologiesText1 h2 {
+        font-size: 2.5rem;
+    }
+
+    .technologiesText1 p {
+        font-size: 1.5rem;
+    }
+
+    .informationBody {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .textInfo input {
+        height: 4rem;
+        width: 100%;
+    }
+
+    .techBlogsBody {
+        margin: 0;
+        padding: 0;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .technologiesCard {
+        border: 1px solid #c0c0c0;
+        margin: 1rem 0.5rem;
+        text-align: center;
+        height: 114px;
+        width: 200px;
+        justify-content: center;
+    }
+
+    .technologiesCard img {
+        margin: 0 0 0 7rem;
+    }
+
+    .technologiesCardHeader7 img {
+        margin: 2rem 0 0 0;
+    }
+
+
+
+    .processBody2 {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .processText3 button {
+        margin-bottom: 2rem;
+    }
+
+    .grid-10 {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .informationBodyText2 li {
+        /* width: 120%; */
+    }
+
+    .techBlogCard {
+        /* width: 420px; */
+        box-shadow: 0;
+        text-align: center;
+        border-radius: 5px;
+    }
+
+}
+
+/* ::: RESPONSIVE CODE ENDS HERE::: */
